@@ -1,38 +1,11 @@
-# create-svelte
+# What is this?
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+This app is a HTML tree visualizer made in Svelte. This was mostly a learning experience for Svelte.
 
-## Creating a project
+Uses BFS to traverse the HTML tree and mostly CSS to render the tree on the page.
 
-If you're seeing this, you've probably already done this step. Congrats!
+Includes a really basic editor for a user to add HTML to render on the screen. The UI will update as new HTML is added.
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+## Example
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
-```bash
-npm run build
-```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+![Example](./static/example.png)
