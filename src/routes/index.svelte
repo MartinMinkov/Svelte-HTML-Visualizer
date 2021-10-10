@@ -1,7 +1,6 @@
 <script lang="ts">
 	import '../globals.scss';
 
-	import { onMount } from 'svelte';
 	import { afterUpdate } from 'svelte';
 
 	import EXAMPLE_HTML from '$lib/ExampleHTML';
@@ -11,6 +10,7 @@
 	let parentNode: HTMLElement;
 	let htmlToRender = EXAMPLE_HTML;
 
+	// Removes the text values from nodes so we can rewrite them with the node type later
 	const removeTextNodesFromChildren = (el: HTMLElement) => {
 		el.childNodes.forEach((child) => {
 			if (child.nodeName === '#text') {

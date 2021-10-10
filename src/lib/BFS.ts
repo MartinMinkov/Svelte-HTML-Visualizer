@@ -10,8 +10,6 @@ export const traverseBFS = (root: HTMLElement, cb: (node: HTMLElement) => void) 
 		Array.from(current.children).forEach((child) => {
 			stack.push(child);
 		});
-
-		// Call given callback with current counter
 		cb(current);
 	}
 };
